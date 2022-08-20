@@ -10,7 +10,7 @@ class Analog extends Clock {
     private function arrowsPos(){
 
         $degrees = [
-            "hDeg" => $this->hours / 12 * 360,
+            "hDeg" => ($this->hours / 12 * 360) + ($this->minutes / 60 * 30),
             "mDeg" => $this->minutes / 60 * 360,
             "sDeg" => $this->seconds / 60 * 360
         ];
