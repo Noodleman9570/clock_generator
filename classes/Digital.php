@@ -14,18 +14,18 @@ class Digital extends Clock {
         $style = "<style>"  .   $this->readFiles("styles/digital.css")    .   "</style>";
 
         $html = " 
-        <div  class='clock_container'>
-            <div class='display_container'>
-                <p class='hour'>".$this->hours."</p>
-                <p>:</p>
-                <p class='min'>".$this->minutes."</p>
-                <p>:</p>
-                <p class='sec'>".$this->seconds."</p>
-                <div class='day_turn'>
-                    <p>".$this->meridiem."</p>
+            <div  class='clock_container'>
+                <div class='display_container'>
+                    <p class='hour'>".$this->hours."</p>
+                    <p>:</p>
+                    <p class='min'>".$this->minutes."</p>
+                    <p>:</p>
+                    <p class='sec'>".$this->seconds."</p>
+                    <div class='day_turn'>
+                        <p>".$this->meridiem."</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
         ";
 
