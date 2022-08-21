@@ -1,5 +1,7 @@
 <?php 
 
+date_default_timezone_set('America/Caracas');
+
 require_once ("classes/autoload.php");
 
 $reloj = new Analog(date("g"),date("i"), date("s"));
@@ -41,10 +43,10 @@ $reloj = new Analog(date("g"),date("i"), date("s"));
             if (isset($_GET) && !empty($_GET)) {
                 if ($_GET['clock'] == 'digital') {
                     $clock = new Digital(date("g"), date("i"), date("s"), date("a"));
-                    echo $clock->clockRender();
+                    $clock->clockRender();
                 } else {
                     $clock = new Analog(date("h"), date("i"), date("s"));
-                    echo $clock->clockRender();
+                    $clock->clockRender();
                 }
             }
         ?>

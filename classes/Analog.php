@@ -49,6 +49,6 @@ class Analog extends Clock {
 
         ";
 
-        return $style   .   " "    .   $html;
+        echo $style   .   " "    .   $html;
     }
 }

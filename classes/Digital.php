@@ -29,6 +29,6 @@ class Digital extends Clock {
 
         ";
 
-        return $style   .   " "    .   $html;
+        echo $style   .   " "    .   $html;
     }
 }
